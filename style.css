@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #0e141b;
+    font-family: "Inter", sans-serif;
+    ::selection{
+        color: white;
+        background-color: #8fff348a;
+    }
+}
+.name_develpoer{
+    font-family: "Lobster Two", sans-serif; 
+}   
+.page-width{
+    max-width: 1320px;
+    margin: auto;
+    padding-inline: 20px;
+}
+header{
+    padding-top: 16px;
+}
+.main_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 30px 14px;
+    position: sticky;
+    top: 0;
+}
+.logo_main {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    .profile_pic{
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+        box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+        vertical-align: middle;
+    }
+    svg{
+        margin-bottom: -4px;
+        margin-left: -2px;
+    }
+}
+.menu_link_list {
+    display: flex;
+    list-style: none;
+    color: white;
+    gap: 14px;
+    a{
+        text-decoration: none;
+        color: rgb(158, 158, 158);
+        padding: 8px 12px;
+        transition: all 0.3s ease-in-out;
+        border-radius: 30px;
+        &:hover{
+            background-color: #8fff34;
+            color: black;
+        }
+    }
+    .contact_me{
+        background-color: #8fff34;
+        color: black;
+    }
+}
+.main_banner{
+    position: relative;
+    color: white;
+    padding: 25vh 50px 80px 50px;
+    h3{
+        font-weight: 600;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: rgb(199, 24, 83);
+    }
+    h1{
+        font-size: 100px;
+        font-family: "Playfair Display", serif;
+    }
+    p{
+        line-height: 160%;
+        font-weight: 300;
+        font-size: 28px;
+        padding-right: 10%;
+        letter-spacing: 1px;
+        margin-top: 14px;
+    }
+}
+.sites_heading{
+    position: relative;
+}
+.sites_heading::after{
+    content: "";
+    width: calc(100% - 4px);
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    margin-inline: 2px;
+    height: 14px;
+    background-color: #8fff34c7;
+}
